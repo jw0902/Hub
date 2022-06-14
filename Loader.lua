@@ -9,7 +9,7 @@ if Parvus and Parvus.Loaded then
 end
 
 getgenv().Parvus = {Loaded = false,Debug = false,Current = "Loader",Utilities = {}}
-Parvus.Utilities.UI = Parvus.Debug and loadfile("Parvus/Utilities/UI.lua")()
+Parvus.Utilities.UI = Parvus.Debug and loadfile("Hub/Utilities/UI.lua")()
 or loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Utilities/UI.lua"))()
 Parvus.Utilities.Drawing = Parvus.Debug and loadfile("Parvus/Utilities/Drawing.lua")()
 or loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Utilities/Drawing.lua"))()
@@ -22,30 +22,10 @@ Parvus.Games = {
         Script = Parvus.Debug and readfile("Parvus/Games/BRM5.lua")
         or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/BRM5.lua")
     },
-    ["580765040"] = {
-        Name = "RAGDOLL UNIVERSE",
-        Script = Parvus.Debug and readfile("Parvus/Games/RU.lua")
-        or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/RU.lua")
-    },
     ["1168263273"] = {
         Name = "Bad Business",
         Script = Parvus.Debug and readfile("Parvus/Games/BB.lua")
         or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/BB.lua")
-    },
-    ["807930589"] = {
-        Name = "The Wild West",
-        Script = Parvus.Debug and readfile("Parvus/Games/TWW.lua")
-        or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/TWW.lua")
-    },
-    ["2194874153"] = {
-        Name = "Those Who Remain",
-        Script = Parvus.Debug and readfile("Parvus/Games/TWR.lua")
-        or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/TWR.lua")
-    },
-    ["1586272220"] = {
-        Name = "Steel Titans",
-        Script = Parvus.Debug and readfile("Parvus/Games/ST.lua")
-        or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/ST.lua")
     }
 }
 
